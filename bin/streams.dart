@@ -1,7 +1,5 @@
 import 'dart:async';
 
-import 'dart:math';
-
 void main() {
   var stream = Stream.fromIterable([1, 2, 3]); //.asBroadcastStream();
 
@@ -9,7 +7,7 @@ void main() {
 
   stream.map((event) => event * 2).listen((event) => print(event));
 
-  // streamFun();
+  streamFun();
 }
 
 streamFun() async {
