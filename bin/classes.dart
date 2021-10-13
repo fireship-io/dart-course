@@ -4,9 +4,6 @@ void main() {
   thing.doStuff();
 
   Basic.helper();
-
-  // Challange. Create a class that represents a Dog.
-  // A dog has a method named bark that prints its name
 }
 
 class Basic {
