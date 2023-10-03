@@ -8,6 +8,7 @@ void main() {
   e._saySecret();
 }
 
+//  abstract class Elephant - 'abstract' is used to make a class which cannot be instantiated, but is there for interface
 class Elephant {
   // Public interface
   final String name;
@@ -21,6 +22,6 @@ class Elephant {
   // Public method.
   sayHi() => 'My name is $name.';
 
-  // Private method.
+  // Private method. - Start function name with '_' to specify it is private
   _saySecret() => 'My ID is $_id.';
 }

@@ -1,11 +1,13 @@
 void main() {
-  Basic thing = new Basic(55);
-  thing.id;
+  Basic thing = Basic(55);
+  print(thing.id);
   thing.doStuff();
 
-  Basic.helper();
+  Basic
+      .helper(); //  Static function can be called directly from class (instead of using object)
 }
 
+//  Class name should always start with capital letter
 class Basic {
   int id;
 
@@ -15,5 +17,5 @@ class Basic {
     print('Hello my ID is $id');
   }
 
-  static helper() {}
+  static helper() {} //  Static allows function to be called globally from class. Useful for global functions which does not need internal state of object
 }

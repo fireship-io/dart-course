@@ -7,7 +7,7 @@ void main() {
 }
 
 class Box<T> {
-  T value;
+  T value; //  Value is a generic - can be any type of variable - double, list, int, etc.
 
   Box(this.value);
 
